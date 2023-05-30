@@ -144,7 +144,7 @@ nav a{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 39rem;
+    gap: 34rem;
   }
   .hero-header .benny, .toggle-btn{
     margin-top: 20px;
