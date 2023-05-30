@@ -76,7 +76,8 @@ nav a{
   width: 190px;
   height: 60px;
   font-size: 30px;
-  border-radius: 10%;
+  border: 1px solid black;
+  border-radius: 0px;;
   box-shadow: none;
   cursor: pointer;
   line-height: 30px;
@@ -102,9 +103,9 @@ nav a{
 .dropdown-menu{
   position: absolute;
   top: 160px;
-  left: 10px;
+  left: 2rem;
   right: 2rem;
-  width: 95%;
+  width: 90%;
   height: 0;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
@@ -115,7 +116,6 @@ nav a{
 }
 .dropdown-menu li{
   font-size: 30px;
-
 }
 .dropdown-menu li a{
   text-decoration: none;
@@ -131,6 +131,11 @@ nav a{
   align-items: center;
   justify-content: center;
 }
+.dropdown-menu button{
+  width: 300px;
+  font-size: 40px;
+  border-radius: 10px;
+}
 
 @media(max-width: 992px){
   header{
@@ -143,7 +148,7 @@ nav a{
     gap: 20rem;
   }
   .hero-header .benny, .toggle-btn{
-    margin-top: 5px;
+    margin-top: 20px;
   }
   .cake{
     display: none;
@@ -157,13 +162,17 @@ nav a{
   }
   .toggle-btn{
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .dropdown-menu{
     display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .no-display{
-    display: none;
+
   }
 }
