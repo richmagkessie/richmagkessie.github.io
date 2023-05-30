@@ -115,6 +115,8 @@ nav a{
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown-menu li{
+  width: 800px;
+  word-wrap: break-word;
   font-size: 30px;
 }
 .dropdown-menu li a{
@@ -136,12 +138,13 @@ nav a{
 @media(max-width: 992px){
   header{
     height: 900px;
+    overflow: hidden;
   }
   .hero-header{
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 35rem;
+    gap: 41rem;
   }
   .hero-header .benny, .toggle-btn{
     margin-top: 20px;
@@ -158,7 +161,7 @@ nav a{
   }
   .toggle-btn{
     display: block;
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .dropdown-menu{
@@ -167,17 +170,19 @@ nav a{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 10px;;
+    gap: 15px;
   }
   .dropdown-menu li{
-    font-size: 50px;
+    font-size: 55px;
   }
   .dropdown-menu .button-start{
     font-size: ;
     width: 400px;
+    height: 120px;
+    padding: 10px;
   }
   .main-header{
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
