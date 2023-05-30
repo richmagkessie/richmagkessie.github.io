@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="second.css">
+    <title>Welcome</title>
+  </head>
+  <body>
+    <header>
+        <section class='hero-header'>
+            <a href="#"><h1 class="benny">Benny's<span class="cake">CakeLand</span></h1></a>
+            <nav class="nav-class">
+              <a href="#" class="active">Home</a>
+              <a href="#">About</a>
+              <a href="#">Order</a>
+              <a href="#">Email</a>
+            </nav>
+            <div class="toggle-btn">
+              <i class="fa fa-bars"></i>
+            </div>
+        </section>
+        <div class="dropdown-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li>  <a href="#">About</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Email</a></li>
+          <div class="main-header header-display">
+            <span>“</span>
+            <p class="customer-quote">Stellar service should be non-negotiable and merchants shouldn’t hide behind self-service <br>tools and technology when it comes to knowing <br>their products and taking care of their customers.</p>
+            <span>”</span>
+            <br>
+            <button>Sign-up</button>
+          </div>
+        </div>
+        <div class="no-display">
+          <div class="main-header">
+            <span>“</span>
+            <p class="customer-quote">Stellar service should be non-negotiable and merchants shouldn’t hide behind self-service <br>tools and technology when it comes to knowing <br>their products and taking care of their customers.</p>
+            <span>”</span>
+            <br>
+            <button>Sign-up</button>
+          </div>
+        </div>
+
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="container-wrapper">
+
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn')
+      const toggleBtnIcon = document.querySelector('.toggle-btn i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick = function (){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa fa-close'
+        : 'fa fa-bars'
+      }
+    </script>
+  </body>
+</html>
