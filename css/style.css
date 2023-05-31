@@ -226,7 +226,7 @@ nav a{
     position: absolute;
     top: 320px;
     width: 90%;
-    height: 500px;
+    height: 600px;
     left: 5%;
     border-radius: 10px;
     background: red;
@@ -240,11 +240,19 @@ nav a{
     width: 500px;
     border-radius: 50%;
   }
-  .boss-quote .quote{
+  .boss-quote{
+    width: 550px;
     position: absolute;
     top: 600px;
     left: 25%;
-
+    text-align: center;
   }
+.boss-quote span{
+  font-size: 70px;
+  font-weight: 700;
+}
+.boss-quote .quote{
+  font-size: 40px;
+}
 
 }
