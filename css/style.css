@@ -209,7 +209,40 @@ nav a{
     border-radius: 10px;
     margin-top: 5px;
   }
-  .container-wrapper h1{
-    color: red;
+  .main-container{
+    /* position: relative; */
   }
+  .container-wrapper{
+    position: relative;
+    background: red;
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+  }
+  .background{
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    height: 500px;;
+    background: red;
+  }
+
+  .owner-image .boss-image{
+    position: absolute;
+    left: 25%;
+    top: 70px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+  .boss-quote .quote{
+    position: absolute;
+    top: 600px;
+    left: 25%;
+
+  }
+
 }
