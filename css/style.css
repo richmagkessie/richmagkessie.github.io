@@ -106,13 +106,15 @@ nav a{
   left: 2rem;
   right: 2rem;
   width: 90%;
-  height: 0;
+  height: 0px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
   border-radius: 10px;
   overflow: hidden;
   display: none;
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .dropdown-menu li{
   width: 800px;
@@ -124,7 +126,7 @@ nav a{
   color: white;
 }
 .dropdown-menu.open{
-  height: 700px;
+  height: 650px;
 }
 
 .dropdown-menu li{
@@ -137,7 +139,7 @@ nav a{
 
 @media(max-width: 992px){
   header{
-    height: 1000px;
+    height: 1200px;
     overflow: hidden;
   }
   .hero-header{
@@ -188,7 +190,7 @@ nav a{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 20px;
   }
   .main-header p{
     text-align: center;
@@ -205,5 +207,6 @@ nav a{
     font-family: sans-serif;
     border: 1px solid black;
     border-radius: 10px;
+    margin-top: 5px;
   }
 }
