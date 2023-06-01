@@ -217,10 +217,6 @@ nav a{
     background: red;
     width: 100%;
     height: auto;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
   }
   .background{
     position: absolute;
@@ -243,16 +239,20 @@ nav a{
   .boss-quote{
     width: 550px;
     position: absolute;
-    top: 600px;
-    left: 25%;
+    top: 580px;
+    left: 21%;
     text-align: center;
   }
 .boss-quote span{
+  font-family: inherit;
   font-size: 70px;
   font-weight: 700;
 }
 .boss-quote .quote{
   font-size: 40px;
+  letter-spacing: 0;
+  line-height: 30px;
 }
+
 
 }
