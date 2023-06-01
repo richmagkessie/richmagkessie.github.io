@@ -253,6 +253,37 @@ nav a{
   letter-spacing: 0;
   line-height: 30px;
 }
-
-
+.newsletter{
+  width: 100%;
+  background: green;
+  position: absolute;
+  top: 150%;
+}
+.newsletter .news-heading, .form{
+  text-align: center;
+}
+.news-heading{
+  font-size: 30px;
+}
+.form{
+  padding: 10px;
+}
+.form input{
+  width: 500px;
+  height: 57px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 21px;
+}
+ .form button{
+   width: 130px;
+   padding: 15px;
+   font-size: 26px;
+   border-radius: 7px;
+   border: 0.3px;
+   cursor: pointer;
+   margin-top: 10px;
+ }
 }
